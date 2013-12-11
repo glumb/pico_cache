@@ -20,4 +20,4 @@ You can change the defaults, by changing the first three variables in the `pico_
 To *clear the cache*, remove the files from the cache folder, or delete the whole cache folder.
 
 
-For more information visit [glumb.de/en/pico-cms-cache-plugin](http://glumb.de/pico-cms-cache-plugin)
+For more information visit [glumb.de/en/pico-cms-cache-plugin](http://glumb.de/en/pico-cms-cache-plugin)
