@@ -9,11 +9,11 @@ To install the Pico Cache plugin, simply download the `pico_cache.php` and put i
 
 ##Configuration
  
-You can change the defaults, by changing the first three variables in the `pico_cache.php` file.
+You can change the defaults, by editing your `config.php` file.
 
-    private $cacheDir = 'content/cache/';
-    private $cacheTime = 604800; // 60*60*24*7, seven days
-    private $doCache = true;
+    $config['cache_enabled'] = true; // default
+    $config['cache_dir'] = 'content/cache/'; // default
+    $config['cache_time'] = '604800'; // 60*60*24*7, seven days (default)
 
 ##Cache clearing
 
