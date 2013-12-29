@@ -16,6 +16,24 @@ class Pico_Cache
     private $doCache = true;
     private $cacheFileName;
 
+    public function config_loaded(&$settings)
+    {
+        if (isset($settings['cache_dir'])) {
+            // ensure cache_dir ends with '/'
+            $lastchar = substr($settings['cache_dir'], -1);
+            if ($lastchar !== '/') {
+                $settings['cache_dir'] = $settings['cache_dir'].'/';
+            }
+            $this->cacheDir = $settings['cache_dir'];
+        }
+        if (isset($settings['cache_time'])) {
+            $this->cacheTime = $settings['cache_time'];
+        }
+        if (isset($settings['cache_enabled'])) {
+            $this->doCache = $settings['cache_enabled'];
+        }
+    }
+
     public function request_url(&$url)
     {
         //replace any character except numbers and digits with a '-' to form valid file names
