@@ -4,7 +4,7 @@ Adds caching functionality to Pico CMS
 
 ##Installation
 
-To install the Pico Cache plugin, simply download the `pico_cache.php` and put it in the plugins directory
+To install the Pico Cache plugin, simply download the `pico_xcache.php` and put it in the plugins directory
 `{picoInstallation}/plugins/`.
 
 ##Configuration

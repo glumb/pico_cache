@@ -8,7 +8,7 @@
  * @license http://opensource.org/licenses/MIT
  * @Version 1.0
  */
-class Pico_Cache
+class Pico_Xcache
 {
 
     private $cacheDir = 'content/cache/';
