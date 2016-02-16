@@ -4,16 +4,20 @@ Adds caching functionality to Pico CMS
 
 ##Installation
 
-To install the Pico Cache plugin, simply download the `pico_xcache.php` and put it in the plugins directory
-`{picoInstallation}/plugins/`.
+To install the Pico Cache plugin, simply download the `PicoXcache.php` and put it in the plugins directory
+`{picoInstallation}/plugins/`. Or git clone the repository with the directory.
 
 ##Configuration
- 
-You can change the defaults, by editing your `config.php` file.
 
-    $config['cache_enabled'] = true; // default
-    $config['cache_dir'] = 'content/cache/'; // default
-    $config['cache_time'] = '604800'; // 60*60*24*7, seven days (default)
+You can change the defaults, by editing your `config.php` file.  
+Defaults:  
+```
+$config['PicoXcache'] = array(
+   'enabled'  => true,    //Enable PicoXcache
+   'cacheDir' => 'cache/',//Set cache dir relative to server root
+   'cacheTime'=> 604800   //Set cache time in seconds 60*60*24*7 = 604800, seven days
+);
+```
 
 ##Cache clearing
 
