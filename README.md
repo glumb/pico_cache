@@ -12,7 +12,7 @@ To install the Pico Cache plugin, simply download the `PicoCache.php` and put it
 You can change the defaults, by editing your `config.php` file.  
 Defaults:  
 ```
-$config['PicoCache'] = array(
+$config['Pico_Xcache'] = array(
    'enabled'  => true,    //Enable PicoCache
    'cacheDir' => 'cache/',//Set cache dir relative to server root
    'cacheTime'=> 604800   //Set cache time in seconds 60*60*24*7 = 604800, seven days
@@ -21,7 +21,7 @@ $config['PicoCache'] = array(
 
 ##Cache clearing
 
-To *clear the cache*, remove the files from the cache folder, or delete the whole cache folder.
+To *clear the cache*, remove the files from the cache folder, or delete the whole cache folder. You can also open this url on your page: domain.tld/Clear_XcacheTrue
 
 ##Common Pitfalls
 
